@@ -7,21 +7,14 @@ import sys
 from datetime import datetime
 
 """ custom """
-# Below was hashed out by sabbir 
-#from examples.working_init import *
 
 from threatconnect import *
-
-# below removed by sabbir 
-#from threatconnect.Config.FilterOperator import FilterOperator
-#from threatconnect.Config.ResourceType import ResourceType
-
 from threatconnect.RequestObject import RequestObject
 
 
 # define global variables 
 
-# Below needs to change based on the chevron's owner's name . We may also take advantage of Owner object if the list of owners is very dynamic 
+# Add owners . See examples below 
 owners = ['Example Community']
 # Here are some of the examples 
 # owners = ['Acme Corp']
@@ -90,7 +83,7 @@ def main():
         jsonFile = open(directory_path+time.year+time.month+time.day+time.hour+time.minute, "w+" )
         jsonFile.write(data)
 
-    # below removed by sabbir for now 
+    # This is for debug purposes 
     #print(json.dumps(data, indent=4))    
 
 
